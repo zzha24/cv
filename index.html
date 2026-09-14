@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>个人简历 — 张昭</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">张昭</a>
+      <nav class="nav" id="nav">
+        <a href="#about">关于</a>
+        <a href="#skills">技能</a>
+        <a href="#experience">经历</a>
+        <a href="#projects">项目</a>
+        <a href="#contact">联系</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="打开菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-card reveal">
+          <div class="avatar" id="avatar">
+            <img src="assets/profile.svg" alt="头像">
+          </div>
+          <div class="hero-content">
+            <h1>张昭</h1>
+            <p class="sub">前端工程师 • UI 交互 • 关注性能与可访问性</p>
+            <p class="lead">我设计并实现现代、响应式且有交互细节的网页体验。擅长使用 HTML, CSS, JavaScript 构建高质量前端应用。</p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#projects">查看项目</a>
+              <a class="btn ghost" href="#contact">联系我</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">关于我</h2>
+        <div class="grid two-col">
+          <div class="card reveal">
+            <h3>个人简介</h3>
+            <p>我是一名前端工程师，拥有多年 Web 开发经验，热衷于把复杂的交互拆解成流畅、可维护的组件，并注重性能与可访问性。</p>
+          </div>
+          <div class="card reveal">
+            <h3>职业目标</h3>
+            <p>希望参与更具挑战性的产品级项目，提升用户体验并推动工程质量（测试、组件化、可观测性）。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section bg-soft">
+      <div class="container">
+        <h2 class="section-title reveal">技能特长</h2>
+        <ul class="skills-list reveal">
+          <li><strong>前端：</strong>HTML5, CSS3, Flexbox / Grid, 响应式布局</li>
+          <li><strong>脚本：</strong>JavaScript (ES6+), TypeScript, Node.js</li>
+          <li><strong>框架/库：</strong>React, Vue, Svelte（理解组件与状态管理）</li>
+          <li><strong>工具链：</strong>Webpack/Vite, ESLint, Prettier, Git</li>
+          <li><strong>其它：</strong>可访问性 (a11y), 性能优化, CSS 动画 & 交互动效</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">工作经历</h2>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <h3>高级前端工程师 — 某科技公司</h3>
+            <span class="meta">2021.06 — 现在</span>
+            <p>负责 UI 库建设、核心页面性能优化与可访问性改造，带领小型前端团队推进工程化实践。</p>
+          </article>
+
+          <article class="timeline-item reveal">
+            <h3>前端开发工程师 — 互联网公司</h3>
+            <span class="meta">2018.03 — 2021.05</span>
+            <p>参与多个 SaaS 产品的前端开发，包括重构与组件化工作，提高了开发效率与产品一致性。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section bg-soft">
+      <div class="container">
+        <h2 class="section-title reveal">项目展示</h2>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-image" style="background:linear-gradient(135deg,#6EE7B7,#3B82F6)"></div>
+            <div class="project-body">
+              <h3>可视化数据看板</h3>
+              <p>使用 React + D3 构建的可交互看板，支持按需加载与大数据量下的渐进渲染。</p>
+              <div class="project-tags"><span>React</span><span>D3</span><span>性能优化</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image" style="background:linear-gradient(135deg,#FDE68A,#FB7185)"></div>
+            <div class="project-body">
+              <h3>设计系统与组件库</h3>
+              <p>主导公司设计系统建设，提供可复用组件、文档与演示沙箱，提升跨团队协作效率。</p>
+              <div class="project-tags"><span>UI Kit</span><span>Storybook</span><span>组件化</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image" style="background:linear-gradient(135deg,#A78BFA,#60A5FA)"></div>
+            <div class="project-body">
+              <h3>移动端 H5 活动页</h3>
+              <p>负责多端适配与动画方案，保障低流量环境下的体验和性能。</p>
+              <div class="project-tags"><span>移动端</span><span>动画</span><span>优化</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">联系方式</h2>
+        <div class="contact-grid">
+          <div class="card reveal">
+            <h3>邮箱</h3>
+            <p><a href="mailto:zhangzhao@example.com">zhangzhao@example.com</a></p>
+          </div>
+          <div class="card reveal">
+            <h3>电话</h3>
+            <p>+86 138 0000 0000</p>
+          </div>
+          <div class="card reveal">
+            <h3>社交</h3>
+            <p><a href="#">GitHub / LinkedIn / 微信</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 张昭 — 精致简约的前端交互</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
