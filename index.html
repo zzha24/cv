@@ -3,147 +3,68 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>个人简历 — 张昭</title>
+  <meta name="description" content="张昭的个人简历，专注于产品体验、前端工程与设计系统。" />
+  <title>张昭 — Product-minded Frontend Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header" id="top">
     <div class="container header-inner">
-      <a class="brand" href="#">张昭</a>
+      <a class="brand" href="#top" aria-label="返回首页"><span class="brand-mark">Z</span><span>张昭</span></a>
       <nav class="nav" id="nav">
-        <a href="#about">关于</a>
-        <a href="#skills">技能</a>
-        <a href="#experience">经历</a>
-        <a href="#projects">项目</a>
-        <a href="#contact">联系</a>
+        <a class="nav-link active" href="#about">关于</a>
+        <a class="nav-link" href="#skills">技能</a>
+        <a class="nav-link" href="#experience">经历</a>
+        <a class="nav-link" href="#projects">项目</a>
+        <a class="nav-link" href="#contact">联系</a>
       </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="打开菜单">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="header-tools"><button class="theme-toggle" id="themeToggle" type="button" aria-label="切换配色主题"><span></span></button><button class="nav-toggle" id="navToggle" type="button" aria-label="打开菜单" aria-expanded="false"><span></span><span></span><span></span></button></div>
     </div>
   </header>
 
   <main>
     <section class="hero">
       <div class="container hero-inner">
-        <div class="hero-card reveal">
-          <div class="avatar" id="avatar">
+        <div class="hero-copy reveal"><p class="eyebrow"><span class="status-dot"></span> 正在寻找新的可能</p><h1>把复杂的事，<em>做得简单而漂亮。</em></h1><p class="lead">我是张昭，一名关注产品体验的前端工程师。用代码、系统思维和一点点好奇心，把想法变成好用的数字产品。</p><div class="hero-actions"><a class="btn primary" href="#projects">浏览我的项目 <span>↗</span></a><a class="btn text-btn" href="#contact">联系我 <span>↓</span></a></div><div class="hero-meta"><span>杭州 / 中国</span><span class="meta-line"></span><span>可远程协作</span></div></div>
+        <div class="hero-visual reveal"><div class="avatar" id="avatar">
             <img src="assets/profile.svg" alt="头像">
-          </div>
-          <div class="hero-content">
-            <h1>张昭</h1>
-            <p class="sub">前端工程师 • UI 交互 • 关注性能与可访问性</p>
-            <p class="lead">我设计并实现现代、响应式且有交互细节的网页体验。擅长使用 HTML, CSS, JavaScript 构建高质量前端应用。</p>
-            <div class="hero-actions">
-              <a class="btn primary" href="#projects">查看项目</a>
-              <a class="btn ghost" href="#contact">联系我</a>
-            </div>
-          </div>
+          </div><div class="visual-note note-one">PRODUCT<br><strong>+ CODE</strong></div><div class="visual-note note-two">2018 — 2026</div><div class="visual-ring"></div>
         </div>
       </div>
     </section>
 
     <section id="about" class="section">
       <div class="container">
-        <h2 class="section-title reveal">关于我</h2>
-        <div class="grid two-col">
-          <div class="card reveal">
-            <h3>个人简介</h3>
-            <p>我是一名前端工程师，拥有多年 Web 开发经验，热衷于把复杂的交互拆解成流畅、可维护的组件，并注重性能与可访问性。</p>
-          </div>
-          <div class="card reveal">
-            <h3>职业目标</h3>
-            <p>希望参与更具挑战性的产品级项目，提升用户体验并推动工程质量（测试、组件化、可观测性）。</p>
-          </div>
-        </div>
+        <div class="section-heading reveal"><p class="kicker">01 / 关于我</p><h2>工程师的手，<br><span>设计师的眼。</span></h2></div><div class="about-grid"><div class="about-intro reveal"><p>过去 8 年，我在产品、设计与工程之间来回穿梭。比起堆砌功能，我更在意每一次点击背后的感受，以及一个系统能否长期、稳定地生长。</p><p>现在，我专注于构建有温度的 B 端产品与设计系统。</p></div><div class="stats reveal"><div><strong>08</strong><span>年工作经验</span></div><div><strong>32</strong><span>上线项目</span></div><div><strong>04</strong><span>设计系统</span></div></div></div>
       </div>
     </section>
 
-    <section id="skills" class="section bg-soft">
+    <section id="skills" class="section section-dark">
       <div class="container">
-        <h2 class="section-title reveal">技能特长</h2>
-        <ul class="skills-list reveal">
-          <li><strong>前端：</strong>HTML5, CSS3, Flexbox / Grid, 响应式布局</li>
-          <li><strong>脚本：</strong>JavaScript (ES6+), TypeScript, Node.js</li>
-          <li><strong>框架/库：</strong>React, Vue, Svelte（理解组件与状态管理）</li>
-          <li><strong>工具链：</strong>Webpack/Vite, ESLint, Prettier, Git</li>
-          <li><strong>其它：</strong>可访问性 (a11y), 性能优化, CSS 动画 & 交互动效</li>
-        </ul>
+        <div class="section-heading light reveal"><p class="kicker">02 / 能力雷达</p><h2>我擅长的，<br><span>不止是写代码。</span></h2></div><div class="skills-layout"><div class="skill-list reveal"><div class="skill-row"><span>01</span><strong>前端工程</strong><p>React / TypeScript / Next.js / CSS Architecture</p></div><div class="skill-row"><span>02</span><strong>体验设计</strong><p>交互原型 / 设计系统 / 可访问性</p></div><div class="skill-row"><span>03</span><strong>协作交付</strong><p>需求拆解 / 技术方案 / 团队共建</p></div></div><div class="skill-bars reveal"><div class="bar-item"><div><span>产品思维</span><b>90%</b></div><i><i style="width:90%"></i></i></div><div class="bar-item"><div><span>界面实现</span><b>96%</b></div><i><i style="width:96%"></i></i></div><div class="bar-item"><div><span>系统建设</span><b>86%</b></div><i><i style="width:86%"></i></i></div><p class="mono-note">HTML · CSS · JS · REACT · FIGMA · GIT</p></div></div>
       </div>
     </section>
 
     <section id="experience" class="section">
       <div class="container">
-        <h2 class="section-title reveal">工作经历</h2>
-        <div class="timeline">
-          <article class="timeline-item reveal">
-            <h3>高级前端工程师 — 某科技公司</h3>
-            <span class="meta">2021.06 — 现在</span>
-            <p>负责 UI 库建设、核心页面性能优化与可访问性改造，带领小型前端团队推进工程化实践。</p>
-          </article>
-
-          <article class="timeline-item reveal">
-            <h3>前端开发工程师 — 互联网公司</h3>
-            <span class="meta">2018.03 — 2021.05</span>
-            <p>参与多个 SaaS 产品的前端开发，包括重构与组件化工作，提高了开发效率与产品一致性。</p>
-          </article>
+        <div class="section-heading split-heading reveal"><div><p class="kicker">03 / 工作经历</p><h2>一路走来，<br><span>保持好奇。</span></h2></div><p class="heading-aside">从 0 到 1，也从 1 到 100。<br>我喜欢解决真正重要的问题。</p></div><div class="timeline"><article class="timeline-item reveal"><div class="timeline-date">2021 — 至今</div><div><h3>高级前端工程师 <span>@ 某科技公司</span></h3><p>负责核心业务的体验升级与前端架构。推动设计系统落地，让跨团队交付效率提升 40%；主导性能专项，首屏加载速度提升 55%。</p><div class="timeline-tags"><span>技术负责人</span><span>Design System</span><span>Web Performance</span></div></div></article><article class="timeline-item reveal"><div class="timeline-date">2018 — 2021</div><div><h3>前端开发工程师 <span>@ 互联网公司</span></h3><p>参与企业级 SaaS 产品从 0 到 1 的建设，和设计、产品一起把模糊的需求变成可用的界面与稳定的功能。</p><div class="timeline-tags"><span>React</span><span>组件化</span><span>SaaS</span></div></div></article>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="section bg-soft">
+    <section id="projects" class="section section-projects">
       <div class="container">
-        <h2 class="section-title reveal">项目展示</h2>
-        <div class="projects-grid">
-          <article class="project-card reveal">
-            <div class="project-image" style="background:linear-gradient(135deg,#6EE7B7,#3B82F6)"></div>
-            <div class="project-body">
-              <h3>可视化数据看板</h3>
-              <p>使用 React + D3 构建的可交互看板，支持按需加载与大数据量下的渐进渲染。</p>
-              <div class="project-tags"><span>React</span><span>D3</span><span>性能优化</span></div>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <div class="project-image" style="background:linear-gradient(135deg,#FDE68A,#FB7185)"></div>
-            <div class="project-body">
-              <h3>设计系统与组件库</h3>
-              <p>主导公司设计系统建设，提供可复用组件、文档与演示沙箱，提升跨团队协作效率。</p>
-              <div class="project-tags"><span>UI Kit</span><span>Storybook</span><span>组件化</span></div>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <div class="project-image" style="background:linear-gradient(135deg,#A78BFA,#60A5FA)"></div>
-            <div class="project-body">
-              <h3>移动端 H5 活动页</h3>
-              <p>负责多端适配与动画方案，保障低流量环境下的体验和性能。</p>
-              <div class="project-tags"><span>移动端</span><span>动画</span><span>优化</span></div>
-            </div>
-          </article>
+        <div class="section-heading split-heading reveal"><div><p class="kicker">04 / 精选项目</p><h2>把想法，<br><span>做成现实。</span></h2></div><p class="heading-aside">每一个项目，都是一次<br>从问题出发的探索。</p></div><div class="projects-grid"><article class="project-card reveal" data-project="dashboard" tabindex="0"><div class="project-image image-dashboard"><span>01</span><div class="chart-lines"></div></div><div class="project-body"><p class="project-number">精选项目 / 01</p><h3>可视化数据看板 <span>↗</span></h3><p>让复杂数据变得可读、可用、可行动。</p><div class="project-tags"><span>React</span><span>D3</span><span>Design</span></div></div></article><article class="project-card reveal" data-project="system" tabindex="0"><div class="project-image image-system"><span>02</span><div class="system-blocks"><i></i><i></i><i></i><i></i></div></div><div class="project-body"><p class="project-number">精选项目 / 02</p><h3>一套会生长的设计系统 <span>↗</span></h3><p>连接设计与工程，让协作变得更轻盈。</p><div class="project-tags"><span>UI Kit</span><span>Storybook</span><span>Tokens</span></div></div></article><article class="project-card reveal" data-project="mobile" tabindex="0"><div class="project-image image-mobile"><span>03</span><div class="mobile-screen"><b></b><i></i><i></i></div></div><div class="project-body"><p class="project-number">精选项目 / 03</p><h3>一场轻盈的移动体验 <span>↗</span></h3><p>在有限的屏幕里，保留无限的想象。</p><div class="project-tags"><span>Mobile</span><span>Motion</span><span>UX</span></div></div></article></div>
         </div>
       </div>
     </section>
 
     <section id="contact" class="section">
       <div class="container">
-        <h2 class="section-title reveal">联系方式</h2>
-        <div class="contact-grid">
-          <div class="card reveal">
-            <h3>邮箱</h3>
-            <p><a href="mailto:zhangzhao@example.com">zhangzhao@example.com</a></p>
-          </div>
-          <div class="card reveal">
-            <h3>电话</h3>
-            <p>+86 138 0000 0000</p>
-          </div>
-          <div class="card reveal">
-            <h3>社交</h3>
-            <p><a href="#">GitHub / LinkedIn / 微信</a></p>
-          </div>
-        </div>
+        <div class="contact-content reveal"><p class="kicker">05 / 联系我</p><h2>有个想法？<br><em>聊聊。</em></h2><p>无论是一个新项目、一份工作机会，还是单纯交换一些关于产品的想法，我都很乐意听到你的声音。</p><button class="email-link" id="copyEmail" type="button">zhangzhao@example.com <span>复制邮箱 ↗</span></button><div class="contact-links"><a href="mailto:zhangzhao@example.com">Email</a><a href="#">GitHub</a><a href="#">LinkedIn</a></div></div>
       </div>
     </section>
 
@@ -151,9 +72,11 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>© 2026 张昭 — 精致简约的前端交互</p>
+      <p>© 2026 张昭</p><a href="#top">回到顶部 ↑</a>
     </div>
   </footer>
+
+  <dialog class="project-modal" id="projectModal"><button class="modal-close" id="modalClose" type="button" aria-label="关闭项目详情">×</button><p class="kicker">项目详情</p><h2 id="modalTitle"></h2><p id="modalText"></p><div id="modalTags" class="project-tags"></div></dialog>
 
   <script src="script.js"></script>
 </body>
