@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalText = document.getElementById('modalText');
   const modalTags = document.getElementById('modalTags');
   const projectDetails = {
-    'ink-bamboo': { title: '《墨色竹韵》', text: '以“墨竹韵”为主题的商业人像摄影小组项目。主导创意策划、团队任务分配与协作，并负责 Photoshop 后期，包括色彩调整、图像合成与特效添加。作品荣获第十三届未来设计师·全国高校数字艺术设计大赛湖北省本科组三等奖。', tags: ['商业人像', 'Photoshop', '省赛三等奖'] },
-    'street-life': { title: '《市井烟火》', text: '聚焦民生议题的新闻摄影小组项目。主导主题策划，负责社会调研、现场拍摄、Illustrator 版面编辑，以及课堂最终展示与成果展览。', tags: ['新闻摄影', '社会调研', '版面设计'] },
-    'field-study': { title: '外景采风', text: '以兰州市藏区文化展示为主题的风光摄影田野调查小组项目。负责七天拍摄任务的主题设定、行程规划与执行，并通过 Photoshop 完成后期处理和版面编辑，最终以视觉作品集形式展出。', tags: ['风光摄影', '田野调查', '作品集'] }
+    'ink-bamboo': { title: '《墨色竹韵》', url: 'projects/ink-bamboo.html' },
+    'street-life': { title: '《市井烟火》', url: 'projects/street-life.html' },
+    'field-study': { title: '外景采风', url: 'projects/field-study.html' }
   };
 
   navToggle.addEventListener('click', () => {
@@ -56,11 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const openProject = (card) => {
     const detail = projectDetails[card.dataset.project];
-    modalTitle.textContent = detail.title;
-    modalText.textContent = detail.text;
-    modalTags.innerHTML = detail.tags.map((tag) => `<span>${tag}</span>`).join('');
-    modal.showModal();
-    document.body.classList.add('modal-open');
+    window.location.href = detail.url;
   };
 
   document.querySelectorAll('.project-card').forEach((card) => {
