@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalText = document.getElementById('modalText');
   const modalTags = document.getElementById('modalTags');
   const projectDetails = {
-    dashboard: { title: '可视化数据看板', text: '为业务团队设计并实现的实时数据看板。通过信息层级、筛选逻辑和渐进式渲染，让复杂数据真正参与决策。', tags: ['React', 'D3', '性能优化'] },
-    system: { title: '一套会生长的设计系统', text: '从设计 Token、组件规范到 Storybook 文档，建立一套设计与工程共享的语言，帮助 6 个产品团队保持一致又不失灵活。', tags: ['UI Kit', 'Storybook', 'Tokens'] },
-    mobile: { title: '一场轻盈的移动体验', text: '一组移动端活动页面的体验升级。通过动效节奏、触控反馈和资源策略，让低网络环境下的体验依然轻快。', tags: ['Mobile', 'Motion', 'UX'] }
+    'ink-bamboo': { title: '《墨色竹韵》', text: '以“墨竹韵”为主题的商业人像摄影小组项目。主导创意策划、团队任务分配与协作，并负责 Photoshop 后期，包括色彩调整、图像合成与特效添加。作品荣获第十三届未来设计师·全国高校数字艺术设计大赛湖北省本科组三等奖。', tags: ['商业人像', 'Photoshop', '省赛三等奖'] },
+    'street-life': { title: '《市井烟火》', text: '聚焦民生议题的新闻摄影小组项目。主导主题策划，负责社会调研、现场拍摄、Illustrator 版面编辑，以及课堂最终展示与成果展览。', tags: ['新闻摄影', '社会调研', '版面设计'] },
+    'field-study': { title: '外景采风', text: '以兰州市藏区文化展示为主题的风光摄影田野调查小组项目。负责七天拍摄任务的主题设定、行程规划与执行，并通过 Photoshop 完成后期处理和版面编辑，最终以视觉作品集形式展出。', tags: ['风光摄影', '田野调查', '作品集'] }
   };
 
   navToggle.addEventListener('click', () => {
@@ -79,11 +79,11 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('copyEmail').addEventListener('click', async (event) => {
     const button = event.currentTarget;
     try {
-      await navigator.clipboard.writeText('zhangzhao@example.com');
-      button.innerHTML = 'zhangzhao@example.com <span>已复制 ✓</span>';
-      window.setTimeout(() => { button.innerHTML = 'zhangzhao@example.com <span>复制邮箱 ↗</span>'; }, 2200);
+      await navigator.clipboard.writeText('jinmeizhang@In.hk');
+      button.innerHTML = 'jinmeizhang@In.hk <span>已复制 ✓</span>';
+      window.setTimeout(() => { button.innerHTML = 'jinmeizhang@In.hk <span>复制邮箱 ↗</span>'; }, 2200);
     } catch (error) {
-      button.innerHTML = 'zhangzhao@example.com <span>请手动复制</span>';
+      button.innerHTML = 'jinmeizhang@In.hk <span>请手动复制</span>';
     }
   });
 
